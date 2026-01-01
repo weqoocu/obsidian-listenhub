@@ -4,7 +4,7 @@
   "version": "1.0.15",
   "minAppVersion": "0.15.0",
   "description": "Generate podcast and audio content from your articles using ListenHub AI. Supports Podcast and FlowSpeech modes. Auto-updates document with episode ID and embedded player.",
-  "author": "weqoocu",
+  "author": "酷口家数字花园",
   "authorUrl": "https://github.com/weqoocu/obsidian-listenhub",
   "isDesktopOnly": false
 }
