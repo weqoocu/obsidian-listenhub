@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build files (keep main.js for release)
+*.js.map
+
+# IDE
+.DS_Store
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+
+# Test files
+test-*.js
+test-*.sh
+
+# Local development files
+.codebuddy/
+
+# Documentation files (not needed for release)
+*.md
+!README.md
+!CHANGELOG.md
+
+# Shell scripts (local use only)
+*.sh
+
+# Zip files
+*.zip
+
+# Lock files (optional, can be included)
+package-lock.json

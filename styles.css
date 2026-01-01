@@ -1,0 +1,203 @@
+/* ListenHub Plugin Styles */
+
+/* Modal styles */
+.listenhub-modal-info {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+}
+
+.listenhub-modal-info p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.listenhub-mode-description {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.listenhub-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.listenhub-modal-buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--interactive-normal);
+  color: var(--text-normal);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.listenhub-modal-buttons button:hover {
+  background-color: var(--interactive-hover);
+}
+
+.listenhub-modal-buttons button.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+.listenhub-modal-buttons button.mod-cta:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.listenhub-modal-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Result Modal styles */
+.listenhub-result {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+}
+
+.listenhub-result p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.listenhub-result a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.listenhub-result a:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.listenhub-processing {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.listenhub-message {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Settings styles */
+.listenhub-mode-descriptions {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.75rem;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+  border-left: 3px solid var(--interactive-accent);
+}
+
+.listenhub-mode-descriptions p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.listenhub-usage {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  border-radius: 4px;
+}
+
+.listenhub-usage p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+/* Speaker list styles */
+.listenhub-speaker-list-container {
+  margin: 1rem 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.listenhub-speaker-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.listenhub-speaker-table th,
+.listenhub-speaker-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.listenhub-speaker-table th {
+  background-color: var(--background-secondary);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.listenhub-speaker-table tr:hover {
+  background-color: var(--background-secondary-alt);
+}
+
+.listenhub-speaker-id {
+  font-family: var(--font-monospace);
+  user-select: all;
+}
+
+.listenhub-audio-link {
+  color: var(--interactive-accent);
+  text-decoration: none;
+}
+
+.listenhub-audio-link:hover {
+  text-decoration: underline;
+}
+
+.listenhub-no-audio {
+  color: var(--text-muted);
+}
+
+.listenhub-use-btn {
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  background-color: var(--interactive-normal);
+  color: var(--text-normal);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.listenhub-use-btn:hover {
+  background-color: var(--interactive-hover);
+}
+
+.listenhub-no-speakers {
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .listenhub-modal-buttons {
+    flex-direction: column;
+  }
+
+  .listenhub-modal-buttons button {
+    width: 100%;
+  }
+}
